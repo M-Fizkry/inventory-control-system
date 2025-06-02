@@ -2143,3 +2143,13 @@
 [02-Jun-2025 08:49:15 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 36
 [02-Jun-2025 08:49:15 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 37
 [02-Jun-2025 15:49:15 Asia/Jakarta] PHP Warning:  Undefined variable $LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN in /project/sandbox/user-workspace/config/database.php on line 134
+[02-Jun-2025 08:49:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 34
+[02-Jun-2025 08:49:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 35
+[02-Jun-2025 08:49:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 36
+[02-Jun-2025 08:49:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 37
+[02-Jun-2025 15:49:23 Asia/Jakarta] PHP Warning:  Undefined variable $LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN in /project/sandbox/user-workspace/config/database.php on line 134
+[02-Jun-2025 08:49:35 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 34
+[02-Jun-2025 08:49:35 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 35
+[02-Jun-2025 08:49:35 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 36
+[02-Jun-2025 08:49:35 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /project/sandbox/user-workspace/config/config.php on line 37
+[02-Jun-2025 15:49:35 Asia/Jakarta] PHP Warning:  Undefined variable $LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN in /project/sandbox/user-workspace/config/database.php on line 134

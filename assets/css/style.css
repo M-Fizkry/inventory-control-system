@@ -1,0 +1,329 @@
+/* General Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Main Content */
+.container-fluid {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: var(--light-color);
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+/* Dashboard Stats */
+.stats-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stats-card .icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+.stats-card .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.stats-card .value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Tables */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-top: none;
+    background-color: var(--light-color);
+    font-weight: 600;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group-text {
+    background-color: var(--light-color);
+    border: 1px solid #ced4da;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.btn-icon {
+    padding: 0.25rem 0.5rem;
+}
+
+.btn-icon i {
+    margin-right: 0.5rem;
+}
+
+/* Alerts */
+.alert {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Charts */
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+
+/* Stock Status Colors */
+.stock-low {
+    color: var(--danger-color);
+}
+
+.stock-normal {
+    color: var(--success-color);
+}
+
+.stock-high {
+    color: var(--warning-color);
+}
+
+/* BOM Tree View */
+.bom-tree {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bom-tree ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.bom-tree li {
+    padding: 0.5rem 0;
+}
+
+.bom-tree .item-node {
+    display: flex;
+    align-items: center;
+}
+
+.bom-tree .item-icon {
+    margin-right: 0.5rem;
+}
+
+/* Production Plan Status */
+.status-badge {
+    padding: 0.35em 0.65em;
+    border-radius: 20px;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.status-draft {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.status-active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.status-completed {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.status-cancelled {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Loading Spinner */
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-card {
+        margin-bottom: 15px;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+    
+    .table-responsive {
+        margin-bottom: 15px;
+    }
+    
+    .bom-tree ul {
+        padding-left: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .btn-print,
+    .no-print {
+        display: none !important;
+    }
+    
+    .container-fluid {
+        padding: 0;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #dee2e6;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: var(--light-color);
+    padding: 1rem 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Language Selector */
+.language-selector .dropdown-item.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Login Page Specific */
+.login-page {
+    background-color: var(--light-color);
+}
+
+.login-card {
+    max-width: 400px;
+    margin: auto;
+}
+
+.login-logo {
+    max-height: 100px;
+    margin-bottom: 2rem;
+}
+
+/* Settings Page */
+.settings-section {
+    margin-bottom: 2rem;
+}
+
+.settings-section-title {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* User Management */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Tooltips */
+.tooltip {
+    font-size: 0.875rem;
+}
+
+/* Modal Customization */
+.modal-header {
+    background-color: var(--light-color);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.modal-footer {
+    background-color: var(--light-color);
+    border-top: 1px solid rgba(0,0,0,0.1);
+}

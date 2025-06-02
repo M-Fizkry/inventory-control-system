@@ -160,6 +160,7 @@ foreach ($items as $item) {
 </div>
 
 <script>
-// Initialize table search
-filterTable('stockSearch', 'stockTable');
+document.addEventListener('DOMContentLoaded', function() {
+    filterTable('stockSearch', 'stockTable');
+});
 </script>
